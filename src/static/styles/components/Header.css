@@ -1,0 +1,53 @@
+.header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.toggle {
+  position: relative;
+  padding: 0 8px;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(92, 92, 92);
+  border-radius: 1000px;
+  color: white;
+  border: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle-ball {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+
+  top: 0;
+  border-radius: 50%;
+  background: rgb(238, 238, 238);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.418);
+  transition: all 0.15s ease-in-out;
+}
+
+.off {
+  left: 0;
+  right: unset;
+}
+
+.on {
+  left: 30px;
+  right: 0;
+}
+
+.toggle-ball.on {
+  background: rgb(255, 169, 56);
+}

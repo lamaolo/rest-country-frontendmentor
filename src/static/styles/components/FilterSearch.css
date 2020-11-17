@@ -1,0 +1,24 @@
+.search {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+}
+
+.search__icon i {
+  color: gray;
+}
+
+.search__input {
+  width: 100%;
+}
+
+.search__input input {
+  width: 100%;
+  background: none;
+  padding: 0 15px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}

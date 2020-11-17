@@ -1,0 +1,86 @@
+$light-textColor: #212529;
+$light-bgColor: #ffff;
+$light-shadow: 0 0 7px rgba(0, 0, 0, 0.349);
+
+* {
+  transition: all 0.15s ease-in;
+}
+
+body {
+  font-family: "Nunito Sans";
+  background-color: $light-bgColor;
+  position: relative;
+}
+
+.box-shadow {
+  box-shadow: $light-shadow;
+}
+
+.unstyled-text {
+  color: #212529;
+  text-decoration: none;
+}
+
+.unstyled-text:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  /* Height of the footer*/
+}
+
+.dark-mode {
+  background-color: #202d36;
+
+  & .header {
+    background: #2b3743;
+  }
+
+  & .toggle-switch {
+    background: white;
+  }
+
+  & .unstyled-text {
+    color: white;
+  }
+
+  .btn {
+    background: #2b3743;
+    border: none;
+  }
+
+  .search {
+    background: #2b3743;
+    & input::placeholder,
+    input {
+      color: white;
+    }
+  }
+
+  & .card {
+    border: none;
+    background-color: #2b3743;
+    color: white;
+  }
+
+  h2,
+  h6 {
+    color: white;
+  }
+
+  /* ------- CARD DETAIL -------------------- */
+
+  & .back-button h5 {
+    background: #2b3743;
+    color: white;
+  }
+
+  & .country-details {
+    color: white;
+    & .border-country {
+      background: #2b3743;
+    }
+  }
+}
