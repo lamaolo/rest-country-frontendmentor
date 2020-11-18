@@ -71,7 +71,7 @@ function Cards({
             <Link
               className="unstyled-text  col-12 col-md-6 col-lg-4 col-xl-3 country-card"
               key={index}
-              to={`${country.alpha3Code.toLowerCase()}`}
+              to={`/country/${country.alpha3Code.toLowerCase()}`}
             >
               <div
                 className="card"

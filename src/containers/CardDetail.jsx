@@ -62,7 +62,7 @@ function CardDetail(props) {
               <strong>{country.name}</strong>
             </h3>
             <div className="row">
-              <div className="col-6">
+              <div className="col-12 col-md-6">
                 <p>
                   <strong>Native Name:</strong> {country.nativeName}
                 </p>
@@ -79,7 +79,7 @@ function CardDetail(props) {
                   <strong>Capital:</strong> {country.capital}
                 </p>
               </div>
-              <div className="col-6">
+              <div className="col-12 mt-3 mt-md-0 col-md-6">
                 <p>
                   <strong>Top Level Domain:</strong> {country.topLevelDomain}
                 </p>
@@ -99,10 +99,10 @@ function CardDetail(props) {
             {country.borders.length ? (
               <div className="container mt-5">
                 <div className="row align-items-center">
-                  <strong>Border Countries:</strong>
+                  <strong className="mr-2">Border Countries:</strong>
                   {country.borders.map((c, index) => (
-                    <span key={index} className="mx-2 my-2">
-                      <a href={c.toLowerCase()} className="unstyled-text">
+                    <span key={index} className="mr-2 my-2">
+                      <a href={`/country/${c.toLowerCase()}`} className="unstyled-text">
                         <p className="border-country pr-2 pl-2 pt-1 pb-1 box-shadow">
                           {c}
                         </p>

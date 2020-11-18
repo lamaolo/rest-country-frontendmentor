@@ -9,7 +9,6 @@ $light-shadow: 0 0 7px rgba(0, 0, 0, 0.349);
 body {
   font-family: "Nunito Sans";
   background-color: $light-bgColor;
-  position: relative;
 }
 
 .box-shadow {
@@ -28,7 +27,6 @@ body {
 
 .footer {
   width: 100%;
-  /* Height of the footer*/
 }
 
 .dark-mode {
@@ -65,7 +63,7 @@ body {
     color: white;
   }
 
-  h2,
+  h1, h2,
   h6 {
     color: white;
   }
